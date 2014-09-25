@@ -10,18 +10,18 @@ var WeakSet = function() {
 
 var proto = WeakSet.prototype;
 
-proto.add = function(key, value) {
+proto['add'] = function(key, value) {
   var name = this.name;
   if (!key[name]) Object.defineProperty(key, name, {value: true, writable: true});
   return this;
 };
-proto.delete = function(key) {
+proto['delete'] = function(key) {
   if (!key[this.name]) return false;
   key[this.name] = undefined;
   return true;
 };
-proto.has = function(key) {
-  return key[this.name];
+proto['has'] = function(key) {
+  return !!key[this.name];
 };
 
 

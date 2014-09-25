@@ -1,9 +1,9 @@
 # WeakSet
 
-A tiny leak-free weakset polyfill.
-Inspired by [polymer’s WeakMap]().
+A tiny leak-free obtrusive weakset polyfill.
+Inspired by [polymer’s WeakMap](https://github.com/polymer/WeakMap) - exaclty the same approach is used.
 
-Avoid using with sealed/frozen/preventedExtension objects.
+Avoid putting _[sealed](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal)/[frozen](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze)/[preventedExtension](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions)_ objects.
 
 
 ## Use

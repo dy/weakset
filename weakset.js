@@ -1,0 +1,1 @@
+;(function(){var b=Date.now()%1E9;function c(){this.name="__st"+(1E9*Math.random()>>>0)+(b++ +"__")}var e=c.prototype;e.add=function(a){var d=this.name;a[d]||Object.defineProperty(a,d,{value:!0,writable:!0});return this};e["delete"]=function(a){if(!a[this.name])return!1;a[this.name]=void 0;return!0};e.has=function(a){return!!a[this.name]};window.WeakSet=c;})();

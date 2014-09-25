@@ -10,10 +10,12 @@
     "better-assert": "~1.0.1"
   },
   "devDependencies": {
-    "mocha": "~1.21.4"
+    "mocha": "~1.21.4",
+    "ccjs": "~0.1.3"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "ccjs index.js --output_wrapper=\";(function(){%output%})();\" --compilation_level=ADVANCED > weakset.js"
   },
   "repository": {
     "type": "git",
