@@ -3,7 +3,8 @@
 A tiny leak-free weakset polyfill.
 Inspired by [polymer’s WeakMap]().
 
-Avoid us
+Avoid using with sealed/frozen/preventedExtension objects.
+
 
 ## Use
 
@@ -17,6 +18,7 @@ or in-browser
 ```html
 <script src="weakset.js"></script>
 ```
+
 
 ## License
 
