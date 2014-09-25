@@ -8,7 +8,7 @@ Implements [polymer’s WeakMap](https://github.com/polymer/WeakMap) approach to
 
 `$ npm install weakset`
 ```js
-var WeakSet = require('WeakSet');
+var WeakSet = require('weakset');
 ```
 
 or in-browser
