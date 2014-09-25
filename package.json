@@ -1,7 +1,7 @@
 {
   "name": "weakset",
   "version": "0.1.2",
-  "description": "WeakSet shim",
+  "description": "Leak-free WeakSet polyfill.",
   "main": "index.js",
   "directories": {
     "test": "test"
