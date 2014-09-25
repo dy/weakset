@@ -1,4 +1,4 @@
-# WeakSet
+# WeakSet [![Build Status](https://travis-ci.org/dfcreative/weakset.svg?branch=master)](https://travis-ci.org/dfcreative/weakset)
 
 A tiny leak-free obtrusive weakset polyfill.
 Inspired by [polymer’s WeakMap](https://github.com/polymer/WeakMap) - exaclty the same approach is used.
