@@ -2,7 +2,7 @@
 
 A tiny leak-free weakset polyfill. _265 bytes gzipped_.
 
-Inspired by [polymer’s WeakMap](https://github.com/polymer/WeakMap).
+Implements [polymer’s WeakMap](https://github.com/polymer/WeakMap) approach to store keys.
 
 
 ## Use
