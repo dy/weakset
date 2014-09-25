@@ -1,7 +1,7 @@
 {
   "name": "weakset",
   "version": "0.1.1",
-  "description": "Weakset polyfill, polymer-weakmap inspired.",
+  "description": "WeakSet shim",
   "main": "index.js",
   "directories": {
     "test": "test"
