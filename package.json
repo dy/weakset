@@ -9,10 +9,8 @@
   "files": [
     "*.js"
   ],
-  "dependencies": {
-    "better-assert": "~1.0.1"
-  },
   "devDependencies": {
+    "better-assert": "~1.0.1",
     "mocha": "~1.21.4",
     "ccjs": "~0.1.3"
   },
