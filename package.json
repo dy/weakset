@@ -16,7 +16,9 @@
   },
   "scripts": {
     "test": "mocha",
-    "build": "ccjs index.js --output_wrapper=\";(function(){%output%})();\" --compilation_level=ADVANCED > weakset.js"
+    "build-min": "npm run build && npm run min && cat weakset.js | gzip-size && rm weakset.dev.js",
+    "build": "uncommon index.js -w \"window['WeakSet']=WeakSet;%output%;\" > weakset.dev.js",
+    "min": "ccjs weakset.dev.js --output_wrapper=\";(function(){%output%})();\" --compilation_level=ADVANCED > weakset.js"
   },
   "repository": {
     "type": "git",

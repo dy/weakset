@@ -1,9 +1,13 @@
+/**
+ * @module WeakSet
+ */
 var counter = Date.now() % 1e9;
+
 
 /**
  * @constructor
  */
-var WeakSet = function(data) {
+function WeakSet (data) {
   this.name = '__st' + (Math.random() * 1e9 >>> 0) + (counter++ + '__');
   data && data.forEach && data.forEach(this.add, this);
 };
@@ -25,8 +29,4 @@ proto['has'] = function(val) {
   return !!val[this.name];
 };
 
-
-/**
- * @module WeakSet
- */
 module.exports = WeakSet;
