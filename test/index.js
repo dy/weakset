@@ -35,4 +35,27 @@ describe('WeakSet', function(){
 		set.add(a);
 		assert(set.delete(a) === true);
 	});
-})
+
+	it('chainable', function(){
+		var ws = new WeakSet();
+		var o1 = {};
+		var o2 = function(){};
+		ws.add(o1).add(o2);
+		assert(ws.has(o1));
+		assert(ws.has(o2));
+	});
+
+	it('iterable constructor argument', function(){
+		var o1 = {};
+		var ws = new WeakSet([
+			o1,
+			function(){},
+			this,
+			{}
+		]);
+
+		assert(ws.has(o1));
+		assert(ws.has(this));
+		assert(!ws.has({}));
+	});
+});
