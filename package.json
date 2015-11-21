@@ -1,6 +1,6 @@
 {
   "name": "weakset",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "description": "Leak-free WeakSet polyfill.",
   "main": "index.js",
   "directories": {
